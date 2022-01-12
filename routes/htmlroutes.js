@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { v4: uuidv4 } = require('uuid');
 
 // route to send user input to notes.html
-router.get('/api/notes', (req, res) => {
+router.get('/notes', (req, res) => {
   res.sendFile(path.join(__dirname, '../public/notes.html'))
 });
 
