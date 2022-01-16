@@ -1,6 +1,1 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test Text"
-    }
-]
+[{"title":"Test Title","text":"Test Text"},{"title":"Test Note v1","text":"Testing the note taker app.","id":"fadb785c-5a62-4465-8c1f-a7f2b7da79de"},{"title":"Groceries","text":"- food","id":"eaafa5c6-9a4d-4685-b1b5-546285a49aa8"}]
