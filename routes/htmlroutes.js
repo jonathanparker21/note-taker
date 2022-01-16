@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { v4: uuidv4 } = require('uuid');
+const path = require('path');
 
 // route to send user input to notes.html
 router.get('/notes', (req, res) => {
@@ -7,7 +7,7 @@ router.get('/notes', (req, res) => {
 });
 
 // route to send user to index.html
-router.get('/', (req, res) => {
+router.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'))
   });
 

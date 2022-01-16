@@ -5,11 +5,11 @@ const fs = require('fs');
 const { json } = require('express/lib/response');
 
 module.exports = function (router) {  
-  router.get("/notes", function (req,res){
+  router.get("/notes", function (req,res) {
     res.json(dataBase)
   })
   
-  router.post("/notes", function (req,res){
+  router.post("/notes", function (req,res) {
     req.body.id = uuidv4()
     dataBase.push(req.body)
     fs.writeFile("../db/db.json", JSON.stringify(dataBase), function(err){
@@ -18,4 +18,5 @@ module.exports = function (router) {
       }
       res.json("saved")
     })
-  }
+  })
+}
